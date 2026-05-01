@@ -1,3 +1,23 @@
-# Zenodo-Mathematical-Sciences-Repository
-Novel approach for predicting prime numbers using remainder sequences, the zeta function, and prime number distribution. Improves efficiency compared to traditional algorithms.
- This research presents a novel approach for predicting prime numbers, leveraging the connections between remainder sequences, the zeta function, and prime number distribution. Our methodology yields a precise equation, refined through a deep understanding of the underlying mathematical structures. The approach demonstrates a significant improvement in efficiency compared to traditional algorithms, such as the Sieve of Eratosthenes. By analyzing the patterns and symmetries present in the remainder sequences, we can pinpoint regions of high prime number density, streamlining the search process. The research establishes a profound connection between our equation and the Riemann zeta function, providing a rich framework for understanding prime number distribution. The implications of this research are far-reaching, with potential applications in cryptography, coding theory, and other disciplines reliant on prime numbers. This innovative methodology contributes to the ongoing quest for optimized prime number detection, shedding new light on the fundamental connections between number theory, algebra, and analysis.
+# Fox Scaling Framework
+
+**Author:** David J Fox | 25yrs IT Infrastructure | AT&T Business Support 2004-2012 | CompTIA A+ Network+
+
+## Overview
+Novel mathematical framework connecting remainder sequences, zeta function, and prime distribution. 
+
+**Core Achievement:** Fox Scaling Ratio — links number theory to physical constants and computational models.
+
+**Current Work:** 
+- 7-layer quantum error correction model in Qiskit
+- Python/NumPy verification suite for analytic number theory
+- Riemann Hypothesis approach via Perron formula + dyadic decomposition
+
+**Technical Stack:** Python, NumPy, Qiskit, LaTeX, Linux
+
+**Background:** 8 years AT&T World Headquarters supporting DSL/Fiber at enterprise scale. Hardware → Software → Theory.
+
+## Run It
+`python fox_scaling_ratio_v1.py` — prints verification of core ratio
+
+## Status
+Active research. Seeking to apply infrastructure-scale thinking to AI systems.
