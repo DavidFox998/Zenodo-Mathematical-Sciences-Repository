@@ -15,9 +15,13 @@ Novel mathematical framework connecting remainder sequences, zeta function, and 
 **Technical Stack:** Python, NumPy, Qiskit, LaTeX, Linux
 
 **Background:** 8 years AT&T World Headquarters supporting DSL/Fiber at enterprise scale. Hardware → Software → Theory.
+**Core Discovery:**
+- **Fractal Harmonic Constant (FHC):** Novel scaling constant modeling self-similar 
+  relationships between remainder sequences, Riemann zeta function, and physical 
+  resonance frequencies. Unifies number theory and computational harmonics.
 
 ## Run It
-`python fox_scaling_ratio_v1.py` — prints verification of core ratio
+'python fhc.py' — prints verification of core ratio
 
 ## Status
 Active research. Seeking to apply infrastructure-scale thinking to AI systems.
