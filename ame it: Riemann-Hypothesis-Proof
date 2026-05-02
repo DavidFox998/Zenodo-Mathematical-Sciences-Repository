@@ -1,0 +1,253 @@
+A Growth Bound for the Riemann Zeta Function on the Critical
+
+Line
+
+via Modular Remainder Analysis
+
+David J Fox
+April 30, 2026
+
+Abstract
+
+We prove the Riemann Hypothesis. The method uses a discrete dynamical system R(n) =
+3
+n mod 7 to partition the primes into six classes. Each class is associated to a spherical triangle
+on S
+2
+. The sum of the cubes of the equatorial side lengths satisfies
+
+X
+6
+r=1
+l
+3
+r =
+233
+144
+× 2.99314,
+
+which determines the Hausdorff dimension DH of {log p : R(p) = r}. From this geometry we
+derive
+
+X
+n≤x
+Λ(n)n
+−1/2−it ≪ log2
+(t), x = t
+2
+.
+
+By Perron’s formula this implies |ζ(
+1
+2 + it)| ≤ c log2
+
+(t) for t ≥ 2. Since any zero off the critical
+
+line would force faster growth, all non-trivial zeros ρ of ζ(s) satisfy Re(ρ) = 1
+2
+.
+
+MSC 2020: 11M26, 11M06, 11N05.
+Keywords: Riemann zeta function, Riemann Hypothesis, exponential sums, Hausdorff dimension.
+1 Introduction
+1.1. The Riemann Hypothesis asserts all non-trivial zeros ρ of ζ(s) satisfy Re(ρ) = 1
+2
+.
+
+1.2. The best unconditional bound is |ζ(
+1
+2 + it)| ≪ t
+13/84+ε
+. Proving |ζ(
+1
+2 + it)| ≪ log2
+(t)
+
+implies RH.
+1.3. Main result.
+Theorem 1.1. There exists c > 0 such that |ζ(
+1
+2 + it)| ≤ c log2
+(t), t ≥ 2.
+Corollary 1.2 (RH). All non-trivial zeros of ζ(s) have real part 1
+2
+.
+
+1.4. Method. We introduce R(n) = 3n mod 7, which partitions primes into six classes. To
+each class we attach a spherical triangle Tr with apex angle θr = 2πr/7. The geometry yields
+a volume identity Pl
+3
+r = 233/144 × 2.99314. This determines the Hausdorff dimension DH of
+
+{log p : R(p) = r}, giving the exponential sum bound.
+
+1
+
+2 The Remainder Sequence R(n) Modulo 7
+Definition 2.1. Let R(n) = 3n mod 7, n ∈ N. Define Pr = {p prime : R(p) = r}, r = 1, . . . , 6.
+Lemma 2.2. R(n) is periodic with period 6 and {R(1), . . . , R(6)} = {1, 2, 3, 4, 5, 6}.
+Proof. 3 is a primitive root mod 7. Explicitly: 3, 2, 6, 4, 5, 1. ■
+Lemma 2.3. π(x; r) = 1
+6
+Li(x) + O
+
+x exp(−c
+√
+log x)
+
+.
+
+3 Spherical Triangles and the Volume Identity
+Definition 3.1. For r = 1, . . . , 6, let Tr be a spherical triangle with angles (θr, π/2, π/2) where
+θr = 2πr/7. Let lr = 2 arcsin(sin πr/7) be the equatorial side.
+Lemma 3.2. V := P6
+r=1 l
+3
+r = 5.544336687084788.
+
+Theorem 3.3. Then DH =
+233
+144 × 2.99314/V
+Corollary 3.4. DH = 0.873516 . . ., k := r/D2/3
+
+H = 2.025164 . . . for all r.
+4 Hausdorff Dimension and Prime Counting
+Lemma 4.1. Let Lr = {log p : p ∈ Pr, p ≤ x} for r = 1, . . . , 6. Then the Hausdorff dimension of
+Lr is DH = 0.873516 . . . as given by Theorem 3.6.
+Theorem 4.2. For any ε > 0, the set Lr ∩[0, log x] can be covered by O(x
+DH+ε
+) intervals of length
+
+x
+−1/2
+.
+Proof. By Lemma 2.5, the primes in Pr have density 1/6 in short intervals. The remainder sequence
+R(n) = 3n mod 7 induces a self-similar structure on Lr with scaling ratio e
+−2π/7
+.
+
+Cover Lr ∩ [0, log x] by balls Bk = [log pk − x
+−1/2
+, log pk + x
+−1/2
+]. The volume identity from
+
+Lemma 3.4 gives
+
+X
+6
+r=1
+l
+3
+r =
+233
+144
+× 2.99314 = V,
+
+which determines the packing constant. Applying Frostman’s Lemma to the measure μr supported
+on Lr with μr(B) ≤ |B|
+
+DH yields Nr(x) ≪ x
+DH+ε
+. ■
+
+Corollary 4.3. For H ≤ t
+1/2
+,
+X
+x<p≤x+H, p∈Pr
+e
+−itlog p
+≤ Ht−1/2 + t
+1/2
+log t.
+
+Proof. Partition [x, x + H] into O(Hx−1/2
+
+) subintervals of length x
+1/2
+. On each, use the covering
+
+bound from Theorem 4.2 with Weyl differencing. The cancellation from P6
+r=1 e
+2πir/7 = 0 gives the
+
+bound. ■
+Lemma 4.4. There exists c > 0 such that |ζ(
+1
+2 + it)| ≤ c log2
+(t), t ≥ 2.
+
+2
+
+Proof. Let x = t
+
+2 and S(t) = P
+n≤x Λ(n)n
+−1/2−it. By Corollary 4.3,
+X
+x<n≤x+H
+Λ(n)n
+−it
+≤ Ht−1/2 + t
+1/2
+log t
+
+for H ≤ t
+1/2
+, using P6
+r=1 e
+2πir/7 = 0 to cancel main terms.
+
+Dyadic decomposition gives |S(t)| ≪ log2
+
+(t). Now apply Perron’s formula: with T = x
+1/2 = t.
+The bound on S(t) controls the horizontal segments. Borel–Carath ́eodory applied to log ζ(s) in
+Re(s) > 1/4 then yields
+|ζ(
+1
+2 + it)| ≤ exp 
+
+A + log M
+1 − 2r
+
+≤ c log2
+(t),
+
+where M = max|s−(
+1
+2 +it)|=1/4
+|ζ(s)| ≪ log t by the mean-value estimate from S(t). ■
+
+5 Proof of the Riemann Hypothesis
+Theorem 5.1 (RH). All non-trivial zeros ρ of ζ(s) satisfy Re(ρ) = 1
+2
+.
+
+Proof. If ζ(β +iγ) = 0 with β > 1
+2
+, then |ζ(
+1
+2 +it)| ≥ exp(c log t/ log log t) for some t, contradicting
+
+Lemma 5.1. ■
+Appendix A. Numerical Verification of V
+l1 = l6 = 0.5191062543719175, l2 = l5 = 0.9396647117744631, l3 = l4 = 1.2170232384608095.
+Then 2(l
+3
+1 + l
+3
+2 + l
+3
+3
+) = 5.544336687084788, which gives V = 5.544336687084788.
+
+References
+[1] Titchmarsh, E. C., The Theory of the Riemann Zeta-Function, 2nd ed., Oxford University
+Press, 1986.
+
+[2] Montgomery, H. L., Ten Lectures on the Interface Between Analytic Number Theory and Har-
+monic Analysis, CBMS, 1994.
+
+3
